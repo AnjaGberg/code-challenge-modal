@@ -6,4 +6,8 @@ export default class extends Controller {
   connect() {
     console.log("open-modal controller connected");
   }
+
+  show(event){
+    console.log(event.currentTarget);
+  }
 }
