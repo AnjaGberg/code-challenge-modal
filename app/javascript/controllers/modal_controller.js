@@ -5,13 +5,13 @@ export default class extends Controller {
   static classes = ['hidden']
 
   connect() {
-    console.log(this.element)
     this.element.openModal = this.open.bind(this);
     this.element.closeModal = this.close.bind(this)
     this.isOpen = !this.element.classList.contains(this.hiddenClass);
   }
 
   close(){
+    console.log(this.element)
     this.isOpen = false;
     this.element.classList.add(this.hiddenClass)
   }
