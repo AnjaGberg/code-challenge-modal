@@ -1,0 +1,7 @@
+<%= form_with model: [@cycle, @invitation] do |f| %>
+  Email: <%= f.text_field :email, required: true %>
+  Message: <%=  f.text_area :message %>
+  <%= f.label :invitation, "Your are about to share information about" %>
+  <%= @cycle.name %>
+  <%= f.submit 'send' %>
+<% end %>
