@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   root 'cycles#index'
-  resources :invitations, only: [:new, :create]
+  resources :cycles, only: [:index] do
+    resources :invitations, only: [:new, :create]
+  end
 end
