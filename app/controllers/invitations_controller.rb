@@ -16,7 +16,10 @@ class InvitationsController < ApplicationController
     if @invitation.save
       redirect_to root_path
     else
-      render :new
+      respond_to do |format|
+        format.html
+        format.js { render :new, locals: {cycle_id: params[:cycle_id]} }
+      end
     end
   end
 
