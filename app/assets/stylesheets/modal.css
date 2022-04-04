@@ -25,6 +25,32 @@
 .modal__content {
 }
 
+.modal__header {
+  padding: 1rem 0rem;
+  font-weight: bold;
+}
+
+.modal__message {
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  border-top: solid 1px #666;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.modal__info {
+  padding-top: 1rem;
+  border-top: solid 1px #666;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.modal__cycle-name {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #666;
+}
+
 .modal__close-button {
   position: absolute;
   top: 0.5rem;

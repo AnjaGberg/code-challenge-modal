@@ -1,7 +1,9 @@
 <%= form_with model: [@cycle, @invitation] do |f| %>
-  Email: <%= f.text_field :email, required: true %>
-  Message: <%=  f.text_area :message %>
-  <%= f.label :invitation, "Your are about to share information about" %>
-  <%= @cycle.name %>
-  <%= f.submit 'send' %>
+  <div class="modal__header">Share cycle with a new Customer</div>
+  <%= f.text_field :email, required: true %>
+  <div class="modal__message">Want to include a message with the invite?</div>
+  <%=  f.text_area :message %>
+  <div class="modal__info"> Your are about to share information with the individuals above:</div>
+  <div class="modal__cycle-name"><%= @cycle.name %></div>
+  <%= f.submit 'SEND INVITATION', class: "modal__send-button" %>
 <% end %>
