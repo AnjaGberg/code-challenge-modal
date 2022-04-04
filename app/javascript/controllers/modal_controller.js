@@ -11,9 +11,9 @@ export default class extends Controller {
   }
 
   close(){
-    console.log(this.element)
     this.isOpen = false;
-    this.element.classList.add(this.hiddenClass)
+    this.element.classList.add(this.hiddenClass);
+    this.contentTarget.innerHTML="";
   }
 
   open(){
