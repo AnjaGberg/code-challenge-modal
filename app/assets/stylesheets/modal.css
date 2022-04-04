@@ -60,6 +60,7 @@
   height: 2rem;
   padding: 0.4rem;
   margin-bottom: 1rem;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .modal__info {
